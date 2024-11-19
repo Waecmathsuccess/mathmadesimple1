@@ -3,17 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Percentages and Approximations</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Web Page</h1>
-    </header>
-    <main>
-        <p>Hello! Click the button below to change the background color.</p>
-        <button onclick="changeBackgroundColor()">Change Background Color</button>
-    </main>
-    <script src="script.js"></script>
+
+    <!-- Video Lecture Section -->
+    <section id="lecture">
+        <h1>Video Lecture: Percentages and Approximations</h1>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/uPc2m5Khffo?si=dXwN9IbSql07xNiM" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <h2>Quiz: Percentages and Approximations</h2>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <p>1. What is 20% of 150?</p>
+                <input type="radio" name="q1" value="A"> A. 15<br>
+                <input type="radio" name="q1" value="B"> B. 30<br>
+                <input type="radio" name="q1" value="C"> C. 25<br>
+                <span class="feedback" id="feedback1"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. If an item costs $200 and is sold at a 25% discount, what is the discounted price?</p>
+                <input type="radio" name="q2" value="A"> A. $150<br>
+                <input type="radio" name="q2" value="B"> B. $175<br>
+                <input type="radio" name="q2" value="C"> C. $125<br>
+                <span class="feedback" id="feedback2"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>3. What is the result of approximating 47.89 to the nearest whole number?</p>
+                <input type="radio" name="q3" value="A"> A. 48<br>
+                <input type="radio" name="q3" value="B"> B. 47<br>
+                <input type="radio" name="q3" value="C"> C. 50<br>
+                <span class="feedback" id="feedback3"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>4. A profit margin of 15% on an item sold for $300 means a profit of:</p>
+                <input type="radio" name="q4" value="A"> A. $45<br>
+                <input type="radio" name="q4" value="B"> B. $60<br>
+                <input type="radio" name="q4" value="C"> C. $50<br>
+                <span class="feedback" id="feedback4"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>5. What is the correct approximation of 0.6837 to the nearest tenth?</p>
+                <input type="radio" name="q5" value="A"> A. 0.7<br>
+                <input type="radio" name="q5" value="B"> B. 0.6<br>
+                <input type="radio" name="q5" value="C"> C. 0.68<br>
+                <span class="feedback" id="feedback5"></span>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+
+    <!-- Assignment Section -->
+    <section id="assignment">
+        <h2>Assignment</h2>
+        <p><strong>Assignment Question:</strong></p>
+        <p>Solve a set of 5 real-life problems involving percentages (e.g., discounts, tax, profit margins). Additionally, round off the solutions to the nearest whole number or tenth and explain your approximation method.</p>
+        <p>Please submit your assignment by sending an email to: <a href="mailto:mathbasics101@gmail.com">mathbasics101@gmail.com</a></p>
+        <p>If the link does not work, send your assignment manually to: mathbasics101@gmail.com</p>
+        <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
+        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+        <h2>PLEASE DONATE</h2>
+        <p>Account Number: 2032202001590</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
+        <p>Wave Mobile: 3709558</p>
+        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
+    </section>
+
+    <script src="script.js"></script> <!-- Link to external JS file -->
 </body>
 </html>
